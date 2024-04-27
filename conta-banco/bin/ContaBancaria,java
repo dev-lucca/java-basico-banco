@@ -1,0 +1,24 @@
+public class ContaBancaria {
+
+    private String nome;
+    private String cpf;
+    private String dataNascimento;
+    private String endereco;
+    private double saldo;
+    private double valorDisponivelSaque;
+
+    public ContaBancaria(String nome, String cpf, String dataNascimento, String endereco, double saldo, double valorDisponivelSaque) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.dataNascimento = dataNascimento;
+        this.endereco = endereco;
+        this.saldo = saldo;
+        this.valorDisponivelSaque = valorDisponivelSaque;
+    }
+
+    @Override
+    public String toString() {
+        return "Nome: " + nome + "\nCPF: " + cpf + "\nData de Nascimento: " + dataNascimento + "\nEndereço: " + endereco
+                + "\nSaldo: " + saldo + "\nValor Disponível para Saque: " + valorDisponivelSaque;
+    }
+}
